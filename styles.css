@@ -1,0 +1,162 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: white;
+    color: #111;
+    line-height: 1.8;
+}
+
+/* NAVBAR */
+
+.navbar {
+    padding: 30px 0;
+    background: white;
+}
+
+.navbar-brand {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: #444 !important;
+    margin-left: 25px;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    color: black !important;
+}
+
+/* CONTENIDO */
+
+.content-width {
+    max-width: 720px;
+    margin: auto;
+}
+
+/* HERO */
+
+.hero {
+    padding: 200px 0;
+}
+
+.hero h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    color: #666;
+}
+
+/* BOTON */
+
+.btn-custom {
+    margin-top: 35px;
+    border: 1px solid #111;
+    border-radius: 0;
+    padding: 12px 30px;
+    background: white;
+    color: #111;
+    transition: .3s;
+}
+
+.btn-custom:hover {
+    background: #111;
+    color: white;
+}
+
+/* SECCIONES */
+
+.section {
+    padding: 120px 0;
+}
+
+.section-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* ARTICULOS */
+
+.article-item {
+    margin-bottom: 50px;
+}
+
+.article-item h4 {
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 10px;
+}
+
+/* JOURNAL */
+
+.journal-section{
+    padding:140px 0;
+}
+
+.journal-subtitle{
+    color:#666;
+    margin-top:15px;
+}
+
+.journal-card img{
+    width:100%;
+    aspect-ratio:16/10;
+    object-fit:cover;
+}
+
+.journal-card h4{
+    margin-top:20px;
+    font-family:'Libre Baskerville', serif;
+    font-size:1.4rem;
+    line-height:1.4;
+}
+
+.journal-card span{
+    display:block;
+    margin-top:10px;
+    color:#777;
+    font-size:.9rem;
+}
+
+.journal-card{
+    transition: all 0.4s cubic-bezier(.22,1,.36,1);
+}
+
+.journal-link{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+    transition: all 0.4s cubic-bezier(.22,1,.36,1);
+}
+
+.journal-link:hover{
+    color:inherit;
+    transform:scale(1.04);
+}
+.journal-link:hover .journal-card{
+    transform:translateY(-8px);
+}
+/* FOOTER */
+
+.footer{
+    background:#000;
+    color:white;
+    padding:50px 0;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    transition:.3s;
+}
+
+.footer a:hover{
+    opacity:.7;
+}
