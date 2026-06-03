@@ -160,3 +160,55 @@ body {
 .footer a:hover{
     opacity:.7;
 }
+/* PODCASTS */
+
+
+.podcast-card{
+    padding:20px;
+    height:100%;
+    min-height:690px;
+    border:1px solid #ececec;
+    cursor:pointer;
+
+    display:flex;
+    flex-direction:column;
+
+    transition:all .4s cubic-bezier(.22,1,.36,1);
+}
+
+.podcast-card:hover{
+    transform:scale(1.04) translateY(-8px);
+}
+
+.podcast-thumbnail{
+    width:100%;
+    aspect-ratio:1/1;
+
+    object-fit:cover;
+
+    margin-bottom:20px;
+}
+
+.podcast-card h4{
+    font-family:'Libre Baskerville', serif;
+    font-size:1.2rem;
+
+    margin-bottom:10px;
+}
+
+.podcast-card p{
+    color:#666;
+    margin:0;
+}
+
+.podcast-card small{
+    display:block;
+
+    margin-top:auto;
+    padding-top:15px;
+
+    color:#777;
+    font-size:.9rem;
+}
+
+
