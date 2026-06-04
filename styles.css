@@ -12,6 +12,12 @@ body {
     background: white;
 }
 
+.navbar-brand img {
+    height: 70px; 
+    margin-left: -100px; 
+    margin-top: -15px; 
+}
+
 .navbar-brand {
     font-family: 'Libre Baskerville', serif;
     font-size: 1.2rem;
