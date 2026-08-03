@@ -15,12 +15,13 @@
 
 <body>
 
+    <!-- ===================== NAVBAR PARA TODAS LAS PAGINAS ===================== -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
 
-            <a class="navbar-brand" href="index.html">
+            <span class="navbar-brand">
                 <img src="img/LogoPodcast.jpeg" alt="Logo Podcast">
-            </a>
+            </span>
 
             <button class="navbar-toggler"
                     type="button"
@@ -32,18 +33,20 @@
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
+                        <span class="nav-link nav-link-current">Inicio</span>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#Id2">Novedades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Id3">Papers</a>
+                        <a class="nav-link" href="papers.html">Papers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Id4">Podcast</a>
+                        <a class="nav-link" href="podcast.html">Podcast</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#sobre-mi">Sobre mí</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="biblioteca.html">Biblioteca</a>
                     </li>
@@ -78,7 +81,7 @@
     <!-- ========================================== -->
     <!-- SECCIÓN NOVEDADES -->
     <!-- ========================================== -->
-    <section class="section bg-light py-5" id="Id2" style="padding-top: 6rem !important;">
+    <section class="section section-soft-white py-5" id="Id2" style="padding-top: 6rem !important;">
         <div class="container">
             
             <div class="text-center mb-5">
@@ -144,9 +147,9 @@
     </section>
 
     <!-- ========================================== -->
-    <!-- SECCIÓN PAPERS Y PODCAST CON FONDO GRIS -->
+    <!-- SECCIÓN PAPERS Y PODCAST -->
     <!-- ========================================== -->
-    <section class="journal-section bg-light py-5" id="Id1">
+    <section class="journal-section section-soft-white py-5" id="Id1">
         <div class="container">
             
             <div id="Id3" class="mb-5 pb-5">
@@ -190,9 +193,19 @@
                         </a>
                     </div>
                 </div>
-            </div>
 
-            <div id="Id4" class="pt-4">
+                <div class="text-center mt-5">
+                    <a href="papers.html" class="btn btn-custom">
+                        Haz clic aquí para ver todos mis papers →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="journal-section section-soft-blue py-5" id="Id4">
+        <div class="container">
+            <div class="pt-4">
                 <div class="text-center mb-5">
                     <h2 class="section-title">
                         Podcast
@@ -243,7 +256,7 @@
                     </a>
                 </div>
             </div>
-    
+
         </div>
     </section>
     <!-- ========================================== -->

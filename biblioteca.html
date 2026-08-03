@@ -13,14 +13,12 @@
 
 <body>
 
-    <!-- ===================== NAVBAR PARA TODAS LAS PAGINAS. ===================== -->
+    <!-- ===================== NAVBAR PARA TODAS LAS PAGINAS ===================== -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
 
-            <!-- LOGO Q SIRVE PARA VOLVER HACIA ATRAS -->
             <a class="navbar-brand" href="index.html">
-                <img src="img/LogoPodcast.jpeg" alt="Logo Podcast" style="height: 40px; margin-right: 10px;">
-                
+                <img src="img/LogoPodcast.jpeg" alt="Logo Podcast">
             </a>
 
             <button class="navbar-toggler"
@@ -32,20 +30,23 @@
 
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto">
-                    <!-- Enlacess con refe en el index y sus id. -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#Id2">Novedades</a>
                     </li>
-                    
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#Id4">Podcast</a>
+                        <a class="nav-link" href="papers.html">Papers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="podcast.html">Podcast</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#sobre-mi">Sobre mí</a>
                     </li>
-                   
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <span class="nav-link nav-link-current">Biblioteca</span>
                     </li>
                 </ul>
             </div>
@@ -66,8 +67,82 @@
                 </p>
             </div>
             
-            <div class="row g-5">
-               
+            <div class="library-scroll-wrap">
+                <button class="library-scroll-control library-scroll-prev" type="button" aria-label="Ver libros anteriores">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="library-scroll" aria-label="Libros de la biblioteca">
+                    <div class="library-item library-float-up">
+                        <a href="libro.html" class="library-link">
+                            <article class="library-card">
+                                <div class="library-cover">
+                                    <img src="img/biblioteca-libro-1.jpg" alt="Portada del libro 1" onerror="this.style.display='none'">
+                                </div>
+                                <h4>Libro recomendado</h4>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="library-item library-float-down">
+                        <a href="libro.html" class="library-link">
+                            <article class="library-card">
+                                <div class="library-cover">
+                                    <img src="img/biblioteca-libro-2.jpg" alt="Portada del libro 2" onerror="this.style.display='none'">
+                                </div>
+                                <h4>Libro recomendado</h4>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="library-item library-float-mid">
+                        <a href="libro.html" class="library-link">
+                            <article class="library-card">
+                                <div class="library-cover">
+                                    <img src="img/biblioteca-libro-3.jpg" alt="Portada del libro 3" onerror="this.style.display='none'">
+                                </div>
+                                <h4>Libro recomendado</h4>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="library-item library-float-up">
+                        <a href="libro.html" class="library-link">
+                            <article class="library-card">
+                                <div class="library-cover">
+                                    <img src="img/biblioteca-libro-4.jpg" alt="Portada del libro 4" onerror="this.style.display='none'">
+                                </div>
+                                <h4>Libro recomendado</h4>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="library-item library-float-down">
+                        <a href="libro.html" class="library-link">
+                            <article class="library-card">
+                                <div class="library-cover">
+                                    <img src="img/biblioteca-libro-5.jpg" alt="Portada del libro 5" onerror="this.style.display='none'">
+                                </div>
+                                <h4>Libro recomendado</h4>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="library-item library-float-mid">
+                        <a href="libro.html" class="library-link">
+                            <article class="library-card">
+                                <div class="library-cover">
+                                    <img src="img/biblioteca-libro-6.jpg" alt="Portada del libro 6" onerror="this.style.display='none'">
+                                </div>
+                                <h4>Libro recomendado</h4>
+                            </article>
+                        </a>
+                    </div>
+                </div>
+
+                <button class="library-scroll-control library-scroll-next" type="button" aria-label="Ver mas libros">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
             </div>
         </div>
     </section>
@@ -144,6 +219,26 @@
                 }
             });
         });
+
+        const libraryScroll = document.querySelector(".library-scroll");
+        const libraryPrev = document.querySelector(".library-scroll-prev");
+        const libraryNext = document.querySelector(".library-scroll-next");
+
+        if (libraryScroll && libraryPrev && libraryNext) {
+            libraryPrev.addEventListener("click", () => {
+                libraryScroll.scrollBy({
+                    left: -320,
+                    behavior: "smooth"
+                });
+            });
+
+            libraryNext.addEventListener("click", () => {
+                libraryScroll.scrollBy({
+                    left: 320,
+                    behavior: "smooth"
+                });
+            });
+        }
     </script>
 </body>
 </html>
